@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-//importing data from local file
 import data from "../data/recipe.js";
 import {
   Box,
@@ -12,14 +11,8 @@ import {
   HStack,
   Heading,
   Image,
-  List,
-  ListIcon,
-  ListItem,
-  Stack,
   Text,
 } from "@chakra-ui/react";
-
-import { MdCheckCircle } from "react-icons/md";
 
 function Feature({ number, desc, ...rest }) {
   return (
@@ -51,7 +44,6 @@ const RecipeCard = ({ hits }) => {
         maxW="340px"
         minH="500px"
         cursor="pointer"
-        onClick={() => console.log("clicked!!")}
       >
         <CardBody>
           <Image src={recipe.image} alt={recipe.label} borderRadius="lg" />

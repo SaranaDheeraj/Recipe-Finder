@@ -56,7 +56,7 @@ const SideDrawer = ({ handleSearch }) => {
       </Box>
       <Spacer display={{ base: "none", md: "block" }} />
       <Box ml="auto">
-        <Button ref={btnRef} colorScheme="teal.300" onClick={onOpen}>
+        {/* <Button ref={btnRef} colorScheme="teal.300" onClick={onOpen}>
           <HamburgerIcon />
         </Button>
         <Drawer
@@ -82,7 +82,7 @@ const SideDrawer = ({ handleSearch }) => {
               <Button colorScheme="blue">Save</Button>
             </DrawerFooter>
           </DrawerContent>
-        </Drawer>
+        </Drawer> */}
       </Box>
     </Flex>
   );
