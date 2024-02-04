@@ -10,7 +10,7 @@ const HomePage = () => {
   const [search, setSearch] = useState("egg");
   const [isLoading, setIsLoading] = useState(true);
 
-  const previous = JSON.parse(localStorage.getItem("previous")) || "egg";
+  const previous = JSON.parse(localStorage.getItem("previous")) || "undefined";
 
   const handleSearch = async (value) => {
     setSearch(value);
@@ -24,7 +24,7 @@ const HomePage = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const value = previous || "egg";
+      const value = previous || "undefined";
       setSearch(value);
       setIsLoading(true);
       const url = `https://api.edamam.com/api/recipes/v2?type=public&q=${value}&app_id=a7a6ca05&app_key=7af5257ec06ad1cde0dc1f2ef21634bf`;
