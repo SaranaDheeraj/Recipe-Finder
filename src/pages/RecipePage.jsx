@@ -82,7 +82,7 @@ const RecipePage = () => {
                 flexDirection="column"
                 justifyContent="center"
               >
-                <Center>
+                <Center m={{ base: "5", md: "0" }}>
                   <Heading as="h2" fontSize={{ base: "3xl", md: "4xl" }}>
                     {recipe.label}
                   </Heading>
