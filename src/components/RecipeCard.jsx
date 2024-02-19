@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-import data from "../data/recipe.js";
 import {
   Box,
   Card,
